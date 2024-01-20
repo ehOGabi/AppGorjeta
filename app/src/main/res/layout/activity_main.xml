@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtiTotal"
+        android:layout_width="304dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/valor_total"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/o_quao_bom_foi_o_servico"
+        android:textColor="#292929"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgOpcoes"
+        android:layout_width="240dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbOtimo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/Otimo_30"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbBom"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/bom_20"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbRegular"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/regular_15"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/swArrendondar"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="356dp"
+        android:text="@string/arredondar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="217dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#246748"
+        android:text="@string/calcular"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swArrendondar" />
+
+    <TextView
+        android:id="@+id/txtGorjeta"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/gorjeta"
+        android:textAlignment="viewEnd"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GuiaAppGorjeta</string>
+    <string name="valor_total">Valor Total</string>
+    <string name="o_quao_bom_foi_o_servico">O quão bom foi o serviço?</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="Otimo_30">Ótimo (30%)</string>
+    <string name="bom_20">Bom (20%)</string>
+    <string name="regular_15">Regular (15%)</string>
+    <string name="arredondar">Arredondar</string>
+    <string name="calcular">Calcular</string>
+    <string name="gorjeta">Gorjeta: %s</string>
+</resources>
